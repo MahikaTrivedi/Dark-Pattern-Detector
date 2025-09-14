@@ -1,0 +1,19 @@
+/* Highlight style for detected elements */
+.dark-pattern-highlight {
+  outline: 3px solid red !important;
+  outline-offset: 2px;
+  background-color: rgba(255, 0, 0, 0.05) !important;
+  transition: outline 0.3s ease, background-color 0.3s ease;
+}
+
+/* Focused element from popup click */
+.dark-pattern-focus {
+  background-color: yellow !important;
+  animation: flash 1s ease-in-out 2;
+}
+
+@keyframes flash {
+  0% { background-color: yellow; }
+  50% { background-color: transparent; }
+  100% { background-color: yellow; }
+}
